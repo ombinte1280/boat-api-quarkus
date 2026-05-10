@@ -1,4 +1,4 @@
-# boat-api
+# boat-infrastructure
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -49,6 +49,33 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 ./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/boat-api-1.0-SNAPSHOT-runner`
+You can then execute your native executable with: `./target/boat-infrastructure-1.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+
+## Related Guides
+
+- REST resources for Hibernate ORM with Panache ([guide](https://quarkus.io/guides/rest-data-panache)): Generate Jakarta
+  REST resources for your Hibernate Panache entities and repositories
+- JDBC Driver - H2 ([guide](https://quarkus.io/guides/datasource)): Connect to the H2 database via JDBC
+- REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus
+  REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
+- SmallRye JWT ([guide](https://quarkus.io/guides/security-jwt)): Secure your applications with JSON Web Token
+- Security JPA ([guide](https://quarkus.io/guides/security-getting-started)): Secure your applications with
+  username/password stored in a database via Jakarta Persistence
+- SmallRye JWT Build ([guide](https://quarkus.io/guides/security-jwt-build)): Create JSON Web Token with SmallRye JWT
+  Build API
+
+## Provided Code
+
+### REST Data with Panache
+
+Generating Jakarta REST resources with Panache
+
+[Related guide section...](https://quarkus.io/guides/rest-data-panache)
+
+### REST
+
+Easily start your REST Web Services
+
+[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
