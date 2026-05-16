@@ -7,7 +7,6 @@ public record CreateBoatRequest(
         String name,
         @NotNull
         String category,
-        @NotNull
         String description,
         @NotNull
         String registration
